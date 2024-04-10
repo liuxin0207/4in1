@@ -1,0 +1,409 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0; 
+}
+
+/* @media(max-width: 830px){
+    body{
+        position:relative;
+    }
+} */
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav {
+    width: 366px;
+    height: 100%;
+    background-image: url(../image/merry.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+            
+
+}
+
+@media (max-width:1200px){
+    .nav{
+        width: 100%;
+        height: 80px;
+        padding: 10px;
+        background-position:bottom;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+       
+    }
+}
+
+@media (max-width:830px){
+    .nav{
+        position: relative;
+        z-index: 9;
+    }
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    margin-top: 50px;
+    background-image: url(../image/nba\ logo.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (max-width:1200px){
+    .logo{
+        width: 60px;
+        height: 60px;
+        /* margin: 0; */
+        margin-top: 0;
+        margin-bottom: 0; 
+    }
+}
+
+@media (max-width:830px){
+    .logo{
+        position:absolute;
+        left: 50%;top:50%;
+        transform: translate(-50%, -50%);
+        /* box-shadow: 0px 0px 2px 3px #ffffff; */
+    }
+}
+
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.nav-btn-all {
+    width: 200px;
+    height: 150px;
+    /* margin: auto; */
+}
+
+@media (max-width:1200px){
+    .nav-btn-all{
+        width: 100%;
+        height: 0;
+        line-height: 70px;
+        float: right;
+        margin: 0;
+    }
+}
+
+@media (max-width:830px){
+    .nav-btn-all{
+        display:none;
+        width: 300px;
+        height: 100px;
+        
+        float: left;
+        transform: translate(-50px,53px);
+        z-index: 3;
+    }
+}
+
+.nav-btn {
+    background-color: rgb(209, 62, 111);
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: normal;
+    color: #ffffff;
+    font-size: 32px;
+    font-style: oblique;
+    border-radius: 10px;
+    display:block;
+    text-decoration: none;
+    border: 2px dashed #ffffff;
+}
+
+@media (max-width:1200px){
+    .nav-btn{
+        width: 120px;
+        height: 25px;
+        margin: 0;
+        margin-bottom: 0;
+        line-height: 20px;
+        margin-right: 50px;
+        float: right;
+        transform:translate(0,-40px);
+    }
+}
+
+@media (max-width:830px){
+    .nav-btn{
+        background-color: rgba(0, 0, 0, 0.756);
+        width: 200px;
+        height: 50px;
+        margin-bottom: 10px;
+        box-shadow: 0px 0px 2px 3px #ffffff;
+        line-height: 1.2;
+        font-size: 40px;
+        border: 3px dashed #ffffff;
+        
+    }
+}
+
+.nav-btn:hover {
+    background-color: #ffffff;
+    color: rgb(18, 165, 185);
+}
+
+
+
+
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.content-all {
+    width: calc(100% - 366px);
+    height: 100%;
+    /* float: left; */
+    /* padding-top: calc((100vh - 570px)/2); */
+    background-image: url(../image/Nba.background.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:1200px){
+    .content-all{
+        width: 100%;
+        height:calc(100vh - 80px);
+        padding-top: 50px;
+    }
+}
+
+@media (max-width:830px){
+    .content-all{
+        padding-top: 0px;
+    }
+}
+
+.content {
+    background-color: rgba(137, 43, 226, 0);
+    width: 957px;
+    height: 570px;
+    /* margin: auto; */
+    display:flex;
+    justify-content: space-between;
+}
+
+@media (max-width:1380px){
+    .content {
+        width: 800px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:1200px){
+    .content {
+        transform:translate( 0 ,20% ) ;
+    }
+}
+
+@media (max-width:830px){
+    .content{
+        width:100%;
+        height: calc(100vh - 80px);
+        transform:translate( 0 ,0 ) ;
+    }
+}
+
+
+
+
+
+
+
+
+/*圖片////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.img:hover {
+    transform: scale(1.02);
+    border-radius: 10px;
+}
+
+@media (max-width:830px){
+    .img:hover {
+        transform: scale(0.9);
+    }
+}
+
+.img {
+    background-color: brown;
+    width: 33%;
+    height: 100%;
+    
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    box-shadow: 0px 0px 2px 3px #ffffff;
+}
+
+@media (max-width:1380px){
+    .img {
+        height: calc(50% - 5px);
+    }
+}
+
+@media (max-width:830px){
+    .img{
+        width: 100%;
+        height:33%;
+    }
+}
+
+.img-1 {
+    background-image: url(../image/curry.jpg);
+    background-position: right 35% bottom 50%;
+
+}
+
+@media (max-width:1380px){
+    .img-1 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:830px){
+    .img-1{
+        margin: 0;
+    }
+}
+
+.img-2 {
+    background-image: url(../image/harden.jpg);
+    width: calc(34% - 10px * 2);
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+@media (max-width:1380px){
+    .img-2 {
+        width: calc(50% - 5px);
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:830px){
+    .img-2{
+        height:34%;
+        width: 100%;
+        margin-right: 0px;
+    }
+}
+
+.img-3 {
+    background-image: url(../image/lebron.jpg);
+}
+
+@media (max-width:1380px){
+    .img-3 {
+        width: calc(50% - 5px);
+    }
+}
+
+@media (max-width:830px){
+    .img-3{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*漢堡////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.ham-menu-btn{
+    background-color:rgba(165, 42, 42, 0);
+    width: 60px;
+    height: 60px;
+    display: none;
+    position: relative;
+}
+
+@media (max-width:830px){
+    .ham-menu-btn{
+        display: block;
+    }
+}
+
+.ham-menu-btn .line {
+    background-color: black;
+    width: 80%;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+
+.ham-menu-btn #line-1 {
+    top: 25%;
+}
+
+.ham-menu-btn #line-2 {
+    top: 50%;
+}
+
+.ham-menu-btn #line-3 {
+    top: 75%;
+}
+
+#ham-menu-switch:checked+.ham-menu-btn #line-1{
+    top: 50%;
+    transform:  translate(-50%, -50%) rotate(45deg);
+}
+
+#ham-menu-switch:checked+.ham-menu-btn #line-2{
+    display: none;
+}
+
+#ham-menu-switch:checked+.ham-menu-btn #line-3{
+    top: 50%;
+    transform:  translate(-50%, -50%) rotate(-45deg);
+}
+
+#ham-menu-switch:checked~.nav-btn-all{
+    display: block;
+    /* position:absolute; */
+}
+       
+
+
+
